@@ -1,0 +1,20 @@
+body.prank {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+}
+
+#black {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 10;
+}
+
+#foto {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.05s; /* muncul mendadak */
+}

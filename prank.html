@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kaget gak?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="prank">
+
+<!-- overlay hitam -->
+<div id="black"></div>
+
+<!-- gambar disembunyikan dulu -->
+<img src="jokowi.jpeg" id="foto">
+
+<audio id="suara">
+  <source src="sound.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById("suara");
+  const foto  = document.getElementById("foto");
+  const black = document.getElementById("black");
+
+  // play audio (masih dalam chain klik)
+  audio.play();
+
+  // samakan timing dengan jeda audio
+  const DELAY = 300; // ms → bisa kamu atur
+
+  setTimeout(() => {
+    black.style.display = "none";
+    foto.style.opacity = "1";
+  }, DELAY);
+</script>
+
+</body>
+</html>
